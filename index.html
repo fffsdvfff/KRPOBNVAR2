@@ -36,7 +36,8 @@ header h1, header h2, header h3 {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 300%;
+
+    
 }
 
 #block1 {
@@ -96,41 +97,71 @@ header h4, .block p {
     color: black;
 }
 
-@media (min-width: 769px) {
-    #block1, #block2 {
+@media (min-width: 768px) {
+    #block1 {
         width: 48%;
         float: left;
         margin-right: 2%;
+        width: 100%;
     }
-
-    #block3, #block4 {
+    #block2 {
         width: 48%;
         float: left;
         margin-right: 2%;
+        width: 100%;
     }
-}
-
-@media (min-width: 993px) {
-    #block1, #block2, #block3 {
-        width: 31%;
+    #block3 {
+        width: 48%;
         float: left;
         margin-right: 2%;
+        width: 100%;
     }
-
     #block4 {
-        width: 31%;
+        width: 48%;
         float: left;
         margin-right: 2%;
+        width: 100%;
     }
 }
 
-@media (min-width: 1201px) {
+@media (max-width: 768px) and (min-width: 992px) {
+    #block1, #block2  {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+        width: 100%;
+    }
+
+    #block3 #block4 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) and  (min-width: 1200px) {
+    #block1, #block2, #block3 {
+        width: 23.5%;
+        float: left;
+        margin-right: 2%;
+        width: 100%;
+    }
+    #block4 {
+        width: 23.5%;
+        float: left;
+        margin-right: 2%;
+        width: 300%;
+    }
+}
+@media (min-width: 992px) {
     #block1, #block2, #block3, #block4 {
         width: 23.5%;
         float: left;
         margin-right: 2%;
-    }
+        width: 100%;
 }
+
 
     </style>
 </head>
