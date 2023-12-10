@@ -20,8 +20,7 @@
 #block4 h4 {
     font-family: 'Montserrat';
 }
-.block p,
-table {
+.block p,table {
     font-family: 'Ubuntu';
 }
 header {
@@ -102,71 +101,41 @@ header h4, .block p {
     color: black;
 }
 
-@media (max-width: 768px) {
-    #block1 {
-        width: 48%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-    #block2 {
-        width: 48%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-    #block3 {
-        width: 48%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-    #block4 {
-        width: 48%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-}
+@media (min-width: 769px) {
+            #block1, #block2 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
 
-@media  screen and  (min-width: 768px) and (max-width: 992px) {
-    #block1, #block2  {
-        width: 31%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
+            #block3, #block4 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+        }
 
-    #block3 #block4 {
-        width: 31%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-}
+        @media (min-width: 993px) {
+            #block1, #block2, #block3 {
+                width: 31%;
+                float: left;
+                margin-right: 2%;
+            }
 
-@media screen and (min-width: 992px) and  (max-width: 1200px) {
-    #block1, #block2, #block3 {
-        width: 23.5%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-    }
-    #block4 {
-        width: 23.5%;
-        float: left;
-        margin-right: 2%;
-        width: 300%;
-    }
-}
-@media (min-width: 1200px) {
-    #block1, #block2, #block3, #block4 {
-        width: 23.5%;
-        float: left;
-        margin-right: 2%;
-        width: 100%;
-}
-}
+            #block4 {
+                width: 31%;
+                float: left;
+                margin-right: 2%;
+            }
+        }
+
+        @media (min-width: 1201px) {
+            #block1, #block2, #block3, #block4 {
+                width: 23.5%;
+                float: left;
+                margin-right: 2%;
+            }
+        }
 
     </style>
 </head>
