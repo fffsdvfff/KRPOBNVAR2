@@ -5,58 +5,83 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Мой первый веб-сайт</title>
  <style type="text/css">
-    .block {
+    body {
+    font-family: 'Your Chosen Font', sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
     padding: 10px;
-    margin-bottom: 20px;
 }
 
-/* Стилі для блоку 1 */
+header h1, header h2, header h3 {
+    color: #333;
+}
+
+.block {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 #block1 {
-    background-color: rgb(17, 60, 75);
+    background-color: #ffc0cb; /* Рожевий фон для блоку 1 */
 }
 
-/* Стилі для блоку 2 */
 #block2 {
-    background-color: lightgreen;
+    background-color: #add8e6; /* Блакитний фон для блоку 2 */
 }
 
-/* Стилі для блоку 3 */
 #block3 {
-    background-color: lightcoral;
+    background-color: #98fb98; /* Зелений фон для блоку 3 */
 }
 
-/* Стилі для блоку 4 */
 #block4 {
-    background-color: lightgoldenrodyellow;
+    background-color: #ffd700; /* Жовтий фон для блоку 4 */
 }
 
-/* Стилі для заголовків блоків */
-.block h4 {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0;
-    width: fit-content;
+header h4, .block p {
+    color: #fff; /* Білий текст для контрасту */
 }
 
-/* Стилі для заголовків блоків 1-4 */
-.block:nth-child(1) h4 {
-    background-color: darkblue;
-    color: white;
+#block1, #block2, #block3, #block4 {
+    width: 100%;
 }
 
-.block:nth-child(2) h4 {
-    background-color: darkgreen;
-    color: white;
+@media (min-width: 769px) {
+    #block1, #block2 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block3, #block4 {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
-.block:nth-child(3) h4 {
-    background-color: darkred;
-    color: white;
+@media (min-width: 993px) {
+    #block1, #block2, #block3 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    #block4 {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
-.block:nth-child(4) h4 {
-    background-color: darkgoldenrod;
-    color: white;
+@media (min-width: 1201px) {
+    #block1, #block2, #block3, #block4 {
+        width: 23.5%;
+        float: left;
+        margin-right: 2%;
+    }
 }
 
 
