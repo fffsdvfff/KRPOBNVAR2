@@ -47,12 +47,24 @@ header h4, .block p {
 #block1, #block2, #block3, #block4 {
     width: 100%;
 }
+/* Стилі для заголовків блоків */
 .block h4 {
     display: inline-block;
     padding: 5px 10px;
     margin: 0;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
+
+/* Змінення кольору тексту для кращої видимості */
+#block1 h4,
+#block2 h4,
+#block3 h4,
+#block4 h4 {
+    color: white;
+}
+
 
 /* Стилі для заголовків блоків 1-4 */
 .block:nth-child(1) h4::before,
@@ -190,13 +202,5 @@ header h4, .block p {
         <img src="https://place-hold.it/320x240" alt="Placeholder Image" width="320" height="240">
         <p>Посилання на зображення: <a href="https://place-hold.it/320x240" target="_blank">https://place-hold.it/320x240</a></p>
     </div>
-
-    
-
-
-
-
-
-
 </body>
 </html>
