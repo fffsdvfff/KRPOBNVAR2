@@ -40,7 +40,7 @@ header h1, header h2, header h3 {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-
+    width: 100%;
     
 }
 
@@ -100,6 +100,9 @@ header h4, .block p {
 #pos { 
     color: black;
 }
+.container {
+    display: flex;
+}
 
 @media (min-width: 768px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
@@ -118,6 +121,26 @@ header h4, .block p {
   .col-lg-10 { width: 83.33%; }
   .col-lg-11 { width: 91.66%; }
   .col-lg-12 { width: 100%; }
+  #block1 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            #block2 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            #block3 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            #block4 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
 }
 
 /* Medium devices (tablet) */
@@ -138,6 +161,17 @@ header h4, .block p {
   .col-md-10 { width: 83.33%; }
   .col-md-11 { width: 91.66%; }
   .col-md-12 { width: 100%; }
+  #block1, #block2 {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            
+            #block3,#block4  {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
 }
 
 /* Small devices (mobile) */
@@ -158,6 +192,16 @@ header h4, .block p {
   .col-sm-10 { width: 83.33%; }
   .col-sm-11 { width: 91.66%; }
   .col-sm-12 { width: 100%; }
+  #block1,  #block2, #block3  {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            #block4  {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
 }
 @media (max-width: 1200px){
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
@@ -176,6 +220,11 @@ header h4, .block p {
   .col-sm-10 { width: 83.33%; }
   .col-sm-11 { width: 91.66%; }
   .col-sm-12 { width: 100%; }
+  #block3 ,  #block1,  #block3,  #block4  {
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
 }
 
     </style>
@@ -186,6 +235,7 @@ header h4, .block p {
     <h2>Сіваєвой Елли Леонідівни</h2>
     <h3>варіант 2</h3>
     </header>
+    <div class="container" >
     <div class="block" id="block1">
         <div class="col-lg-4 col-md-6">
         <h4>Текст</h4>
@@ -251,5 +301,6 @@ header h4, .block p {
         <img src="https://place-hold.it/320x240" alt="Placeholder Image" width="320" height="240">
         <p id="pos">Посилання на зображення: <a href="https://place-hold.it/320x240" target="_blank">https://place-hold.it/320x240</a></p>
         </div>
+    </div>
     </div>
 </body></html>
